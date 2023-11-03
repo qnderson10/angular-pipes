@@ -13,6 +13,11 @@ import localeEsCO from "@angular/common/locales/es-CO";
 import localeFrCA from "@angular/common/locales/fr-CA";
 
 import { registerLocaleData } from "@angular/common";
+import { OrderComponent } from './pages/order/order.component';
+import { ToggleCasePipe } from './pipes/toggle-case.pipe';
+import { CanFlyPipe } from './pipes/can-fly.pipe';
+import { HeroColorPipe } from './pipes/hero-color.pipe';
+import { SortByPipe } from './pipes/sort-by.pipe';
 
 registerLocaleData(localeEsCO);
 registerLocaleData(localeFrCA);
@@ -22,7 +27,13 @@ registerLocaleData(localeFrCA);
     ProductsComponent,
     BasicPageComponent,
     NumbersPageComponent,
-    UncommonPageComponent
+    UncommonPageComponent,
+    OrderComponent,
+    // Pipes
+    ToggleCasePipe,
+    CanFlyPipe,
+    HeroColorPipe,
+    SortByPipe,
   ],
   imports: [
     CommonModule,
